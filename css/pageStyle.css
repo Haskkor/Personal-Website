@@ -27,8 +27,23 @@ p {
 }
 
 .bg-top { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
+	background: no-repeat center right fixed url(../assets/images/background.jpg);
+	background-size: cover;
+	margin-bottom: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.overlay {
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    z-index: 2;
 }
 
 .bg-2 { 
@@ -53,6 +68,7 @@ p {
 
 .image-profile-top {
 	display: inline;
+	width: 300px;
 }
 
 .images-portfolio {
