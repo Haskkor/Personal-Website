@@ -13,8 +13,8 @@ p {
 }
 
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
@@ -23,7 +23,7 @@ p {
 }
 
 .navbar-nav li a:hover {
-    color: #1abc9c !important;
+    color: #00789d !important;
 }
 
 .bg-top { 
@@ -31,19 +31,6 @@ p {
 	background-size: cover;
 	margin-bottom: 0px;
     padding: 0px;
-    position: relative;
-}
-
-.overlay {
-    background-color: black;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    opacity: 0.75;
-    filter: alpha(opacity=75);
-    z-index: 2;
 }
 
 .bg-2 { 
@@ -62,8 +49,8 @@ p {
 }
 
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .image-profile-top {
