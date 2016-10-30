@@ -9,29 +9,24 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/pageStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
 	
 	<nav class="navbar navbar-fixed-top navbar-inverse">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span> 
-				</button>
 				<a class="navbar-brand" href="#">Jérémy Farnault - Developer</a>
 			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
+			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Profile</a></li>
-					<li><a href="#">Experiences</a></li>
-					<li><a href="#">Skills</a></li>
-					<li><a href="#">Personal Projects</a></li>
-					<li><a href="#">Contact me</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-time"></span>Experiences</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>Skills</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-folder-open"></span>Personal Projects</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-envelope"></span>Contact me</a></li>
 				</ul>
 			</div>
 		</div>
@@ -39,41 +34,69 @@
 
 	<div class="container-fluid bg-top text-center">
 		<div class="container">
-			<h1>Jérémy Farnault</h1>
+			<h1 class="h1-name">Jérémy Farnault</h1>
 			<img src="assets/images/profile_pic.jpg" class="img-responsive img-circle image-profile-top" alt="Profile picture">
 			<p class="lead">Developer</p>
 		</div>
 	</div>
 
-	<div class="container-fluid bg-2 text-center">
-		<h3>What Am I?</h3>
-		<p>Lorem ipsum..</p>
-		<a href="#" class="btn btn-default btn-lg">
-			<span class="glyphicon glyphicon-search"></span> Search
-		</a>
+	
+	
+	
+	
+	<div class="container bg-profile text-center profile">
+		<h3>Profile</h3>
+		<p><em>Who am I?</em></p>
+		<div class="texts-profile">
+			<p>I'm a french soon to be kiwi <em>full-stack</em> developer. I'm 31 years old, and I'm currently living near Toulouse, France with my wife and two children. I'm pretty much of a <em>bookworm</em>, and particularly enjoy mangas and fantasy novels. I also love all kinds of <em>games</em>. Role playing games, card games, board games video games...you name it and I'm in! Last but not least, I love <em>sports</em>. I train every morning, 6 days a week, fitness, gym and cardio workouts.</p>
+			<p>I use to be a boilermaker in aeronautics. I hammered metal sheets for 7 years but I always knew it wasn't the right place for me. So I get my feet back in shool and took evening classes for 2 years to obtain my High School degree. I always had a thing with computers so I decided to take a shoot and try to make my way in this domain. 6 years later, here I am with my Master of Science in Informatics! During those years I've been a Networks administrator, a Systems administrator and a full-stack developer so I can say that I'm sure of what I want to do for a living. </p>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-4">
+				<p><strong>Name</strong></p><br>
+				<img src="bandmember.jpg" class="img-circle pics-profile" alt="Random Name">
+			</div>
+			<div class="col-sm-4">
+				<p><strong>Name</strong></p><br>
+				<img src="bandmember.jpg" class="img-circle pics-profile" alt="Random Name">
+			</div>
+			<div class="col-sm-4">
+				<p><strong>Name</strong></p><br>
+				<img src="bandmember.jpg" class="img-circle pics-profile" alt="Random Name">
+			</div>
+		</div>
 	</div>
 
-	<div class="container-fluid bg-3 text-center">
+	
+	
+	
+	
+	<div class="container-fluid bg-2 text-center">
 		<h3>Where To Find Me?</h3>
 		<div class="row">
 			<div class="col-sm-4">
 				<p>Lorem ipsum..</p>
-				<img src="birds1.jpg" class="img-responsive images-portfolio" alt="Image">
+				<img src="" class="img-responsive images-portfolio" alt="Image">
 			</div>
 			<div class="col-sm-4">
 				<p>Lorem ipsum..</p>
-				<img src="birds2.jpg" class="img-responsive images-portfolio" alt="Image">
+				<img src="" class="img-responsive images-portfolio" alt="Image">
 			</div>
 				<div class="col-sm-4"> 
 				<p>Lorem ipsum..</p>
-				<img src="birds3.jpg" class="img-responsive images-portfolio" alt="Image">
+				<img src="" class="img-responsive images-portfolio" alt="Image">
 			</div>
 		</div>
 	</div>
-</body>
 
-<footer class="container-fluid bg-4 text-center">
-	<p>Bootstrap Theme Made By <a href="http://www.w3schools.com">www.w3schools.com</a></p> 
-</footer>
+	<footer class="container-fluid bg-4 text-center">
+		<a href="#" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		 </a>
+		<p>Je vogue à travers les étoiles</p> 
+	</footer>
+
+</body>
 
 </html>
