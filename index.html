@@ -13,16 +13,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 	
 	<nav class="navbar navbar-fixed-top navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Jérémy Farnault - Developer</a>
+				<a class="navbar-brand" href="#myPage">Jérémy Farnault - Developer</a>
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+					<li><a href="#profile"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-time"></span>Experiences</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>Skills</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-folder-open"></span>Personal Projects</a></li>
@@ -40,51 +40,43 @@
 		</div>
 	</div>
 
-	
-	
-	
-	
-	<div class="container bg-profile text-center profile">
-		<h3>Profile</h3>
-		<p><em>Who am I?</em></p>
-		<div class="texts-profile">
-			<p>I'm a french soon to be kiwi <em>full-stack</em> developer. I'm 31 years old, and I'm currently living near Toulouse, France with my wife and two children. I'm pretty much of a <em>bookworm</em>, and particularly enjoy mangas and fantasy novels. I also love all kinds of <em>games</em>. Role playing games, card games, board games video games...you name it and I'm in! Last but not least, I love <em>sports</em>. I train every morning, 6 days a week, fitness, gym and cardio workouts.</p>
-			<p>I use to be a boilermaker in aeronautics. I hammered metal sheets for 7 years but I always knew it wasn't the right place for me. So I get my feet back in shool and took evening classes for 2 years to obtain my High School degree. I always had a thing with computers so I decided to take a shoot and try to make my way in this domain. 6 years later, here I am with my Master of Science in Informatics! During those years I've been a Networks administrator, a Systems administrator and a full-stack developer so I can say that I'm sure of what I want to do for a living. </p>
-			<p>I use to be a boilermaker in aeronautics. I hammered metal sheets for 7 years but I always knew it wasn't the right place for me. So I get my feet back in shool and took evening classes for 2 years to obtain my High School degree. I always had a thing with computers so I decided to take a shoot and try to make my way in this domain. 6 years later, here I am with my Master of Science in Informatics! During those years I've been a Networks administrator, a Systems administrator and a full-stack developer so I can say that I'm sure of what I want to do for a living. </p>
+	<div id="profile" class="container bg-profile text-center profile">
+		<div class="inline-flex">
+			<h3 class="glyphicon glyphicon-user"></h3>
+			<h3>Profile</h3>
 		</div>
-		<br>
+		<p><span>Who am I?</span></p>
+		<p>I'm a french kiwi wannabe <em>full-stack</em> developer. I'm 31 years old, and I'm currently living near Toulouse, France with my wife and two children. I'm pretty much of a <em>bookworm</em>, and particularly enjoy mangas and fantasy novels. I also love all kinds of <em>games</em>. Role playing games, card games, board games video games...you name it and I'm in! Last but not least, I love <em>sport</em>. I train every morning, 6 days a week, fitness, gym and cardio workouts.</p>
+		<p>I use to be a <em>boilermaker</em> in aeronautics. I hammered metal sheets for 7 years but I always knew it wasn't the right place for me. So I get my feet back in shool and took <em>evening classes</em> for 2 years to obtain my High School degree. I always had a thing with computers so I decided to take a shoot at it and try to make my way in this domain. I keep the evening class going for 3 more years in the university to obtain my <em>Technology University degree in Informatics</em>. In the same time I got my <em>Technical Degree in Informatics</em> and had my first work experience in this field. Finally, I went to the prestigious <em>SUPINFO International Unversity</em> and 3 years later, here I am with my <em>Master of Science in Informatics</em>!</p>
+		<p>My first job in my new favorite discipline was <em>Networks administrator</em>. University made me love development but I wasn't able to see what the job was like every day, so I took a step back and learned another job. After 3 years doing this, I jumped on an opportunity to switch for a <em>Systems administrator / Python developer</em> position in another company. Proving myself more than able as a developer, I've been offered a new job as a full-stack <em>JEE / AngularJS</em> developer for the next 2 years to build a skills management application. The mission eventually reaches its end and I'm currently on a <em>JEE / GWT</em> assignment. On a personal matter, I'm a huge fan of the <em>Python</em> language and I've had the opportunity to teach it to a class as <em>SUPINFO Certified Teacher</em>, which is my dearest experience so far.</p>
 		<div class="row">
 			<div class="col-sm-2">
-				<p><strong>Name</strong></p><br>
-				<img src="bandmember.jpg" class="img-circle pics-profile" alt="Random Name">
+				<p><strong>Python</strong></p>
+				<img src="assets/images/python.png" class="img-circle pics-profile" alt="Python logo" data-toggle="tooltip" data-placement="bottom" title="SUPINFO Certified Teacher. See my Github for games and scripts!">
 			</div>
 			<div class="col-sm-2">
-				<p><strong>Name</strong></p><br>
-				<img src="bandmember.jpg" class="img-circle pics-profile" alt="Random Name">
+				<p><strong>Books</strong></p>
+				<img src="assets/images/mangas.png" class="img-circle pics-profile" alt="Manga characters" data-toggle="tooltip" data-placement="bottom" title="A collection of 700 mangas and a huuuuge fan of J.R.R Tolkien!">
 			</div>
 			<div class="col-sm-2">
-				<p><strong>Name</strong></p><br>
-				<img src="bandmember.jpg" class="img-circle pics-profile" alt="Random Name">
+				<p><strong>Java</strong></p>
+				<img src="assets/images/java.png" class="img-circle pics-profile" alt="Java logo" data-toggle="tooltip" data-placement="bottom" title="3 years of experience in JEE. Great knowledge in Spring and Hibernate!">
 			</div>
 			<div class="col-sm-2">
-				<p><strong>Name</strong></p><br>
-				<img src="bandmember.jpg" class="img-circle pics-profile" alt="Random Name">
+				<p><strong>Games</strong></p>
+				<img src="assets/images/games.png" class="img-circle pics-profile" alt="Goblin with die" data-toggle="tooltip" data-placement="bottom" title="RPG player and role master (The One Ring, Pathfinder, Cthulhu etc.), board and card games lover!">
 			</div>
 			<div class="col-sm-2">
-				<p><strong>Name</strong></p><br>
-				<img src="bandmember.jpg" class="img-circle pics-profile" alt="Random Name">
+				<p><strong>AngularJS</strong></p>
+				<img src="assets/images/angular.png" class="img-circle pics-profile" alt="Angular logo" data-toggle="tooltip" data-placement="bottom" title="2 years of experience. Love the technology and eager to get back to it!">
 			</div>
 			<div class="col-sm-2">
-				<p><strong>Name</strong></p><br>
-				<img src="bandmember.jpg" class="img-circle pics-profile" alt="Random Name">
+				<p><strong>Sport</strong></p>
+				<img src="assets/images/sport.png" class="img-circle pics-profile" alt="Sport logo" data-toggle="tooltip" data-placement="bottom" title="Success at anything will always come down to this: focus & effort. And we control both!">
 			</div>
 		</div>
 	</div>
 
-	
-	
-	
-	
 	<div class="container-fluid bg-2 text-center">
 		<h3>Where To Find Me?</h3>
 		<div class="row">
@@ -104,11 +96,31 @@
 	</div>
 
 	<footer class="container-fluid bg-4 text-center">
-		<a href="#" title="To Top">
+		<a href="#myPage" title="To Top">
 			<span class="glyphicon glyphicon-chevron-up"></span>
 		 </a>
 		<p>Je vogue à travers les étoiles</p> 
 	</footer>
+
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip(); 
+		});
+
+		$(document).ready(function(){
+			$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 1200, function(){
+					window.location.hash = hash;
+					});
+		    	}
+		  	});
+		});
+	</script>
 
 </body>
 

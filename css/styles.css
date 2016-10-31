@@ -6,12 +6,17 @@ body {
 
 p {
 	font-size: 16px;
+    margin: 25px 0px;
 }
 
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
     color: #00789d;
+}
+
+.inline-flex {
+    display: inline-flex;
 }
 
 .navbar {
@@ -62,13 +67,19 @@ footer .glyphicon {
     padding: 80px 0px;
 }
 
-.texts-profile {
-	display: flex;
-}
-
-.texts-profile em {
+.bg-profile em {
 	font-style: normal;
 	font-weight: bold;
+    color: #00789d;
+}
+
+.bg-profile span {
+    font-style: italic;
+}
+
+.bg-profile h3 {
+    font-weight: bold;
+    padding: 0px 10px;
 }
 
 .pics-profile {
@@ -76,7 +87,6 @@ footer .glyphicon {
     margin-bottom: 25px;
     width: 80%;
     height: 80%;
-    opacity: 0.7;
 }
 .pics-profile:hover {
     border-color: #f1f1f1;
