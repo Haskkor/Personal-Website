@@ -9,6 +9,12 @@ p {
     margin: 25px 0px;
 }
 
+em {
+    font-style: normal;
+    font-weight: bold;
+    color: #00789d;
+}
+
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
@@ -37,18 +43,22 @@ footer .glyphicon {
     color: #00789d;
 }
 
+.content-description {
+    font-size: 13px;
+}
+
 .bg-top { 
 	background: no-repeat center right fixed url(../assets/images/background.jpg);
 	background-size: cover;
 	text-align: -webkit-center;
 	margin-bottom: 0px;
-	padding-top: 150px;
-    padding-bottom: 150px;
+	padding-top: 15%;
+    height: 100vh;
 }
 
 .h1-name {
 	padding-bottom: 10px;
-	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid #ffffff;
     border-bottom-color: rgba(255,255,255,0.35);
 	width: 30%;
 }
@@ -58,26 +68,42 @@ footer .glyphicon {
 	width: 300px;
 }
 
-.bg-profile { 
+.citation-top {
+    float: right;
+    font-style: italic;
+}
+
+.citation-top-text {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.citation-top-author {
+    float: right;
+    margin: 0;
+    font-size: 12px;
+}
+
+.bg-white { 
     background-color: #ffffff;
     color: #555555;
 }
 
-.profile {
+.bg-dark { 
+    background-color: #2d2d30;
+    color: #ffffff;
+}
+
+.section-content {
     padding: 80px 0px;
 }
 
-.bg-profile em {
-	font-style: normal;
-	font-weight: bold;
-    color: #00789d;
-}
-
-.bg-profile span {
+.section-content span {
     font-style: italic;
 }
 
-.bg-profile h3 {
+.section-content h3 {
     font-weight: bold;
     padding: 0px 10px;
 }
@@ -88,14 +114,81 @@ footer .glyphicon {
     width: 80%;
     height: 80%;
 }
+
 .pics-profile:hover {
     border-color: #f1f1f1;
 }
 
-.bg-2 { 
-	background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
+.bg-dark .experience {
+    margin-bottom: 20px;
+    border: 1px dashed white;
+    border-color: rgba(255,255,255,0.35);
 }
+
+.bg-white .experience {
+    margin-bottom: 20px;
+    border: 1px dashed white;
+    border-color: rgba(85,85,85,0.35);
+}
+
+.experience .experience-loc {
+    margin-bottom: 0;
+}
+
+.experience .experience-date {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 12px;
+}
+
+.experience .experience-title {
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+.experience .experience-details {
+    display: block;
+    margin: 0 0;
+    font-size: 12px;
+}
+
+.experience .experience-environment {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.bg-dark .experience a {
+    color: white;
+}
+
+.bg-dark .experience a:hover {
+    color: #00789d;
+}
+
+.bg-white .experience a {
+    color: #555555;
+}
+
+.bg-white .experience a:hover {
+    color: #00789d;
+}
+
+.content-experiences {
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .bg-4 { 
     background-color: #2f2f2f;
