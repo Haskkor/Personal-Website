@@ -400,11 +400,11 @@
 	</section>
 
 	<section id="skills" class="container-fluid bg-dark text-center section-content">
-		<div class="inline-flex">
+		<div id="skills-title" class="inline-flex">
 			<h3 class="glyphicon glyphicon-screenshot"></h3>
 			<h3>Skills</h3>
 		</div>
-		<p><span>What I am good at?</span></p>
+		<p><span>What am I good at?</span></p>
 		<div class="container-fluid">
 			<div id="skills-bars" class="row">
 				<div class="col-sm-4">
@@ -573,7 +573,7 @@
 					</div> 
 				</div> 
 			</div>
-			<div class="row">
+			<div id="skills-language" class="row">
 				<div class="col-sm-6">
 					<div class="panel panel-default text-center">
 						<div class="panel-heading">
@@ -680,53 +680,50 @@
 			<h3>Personnal Projects</h3>
 		</div>
 		<p><span>What have I done?</span></p>
-		<div class="row">
-			<div class="col-sm-4">
-				<p></p>
-				<img src="assets/images/hotr.png" class="pics-portfolio" alt="Heroes of the Ring fight">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="assets/images/hotr.png" class="pics-portfolio" alt="Heroes of the Ring fight">
+				</div>
+				<div class="col-sm-4">
+					<p></p>
+					<img src="assets/images/miyasplatformer.png" class="pics-portfolio" alt="Miya's platformer gameplay">
+				</div>
+				<div class="col-sm-4"> 
+					<p></p>
+					<img src="assets/images/lotrsoundboard.png" class="pics-portfolio" alt="Lord of the Rings sounboard windows phone app">
+				</div>
 			</div>
-			<div class="col-sm-4">
-				<p></p>
-				<img src="assets/images/miyasplatformer.png" class="pics-portfolio" alt="Miya's platformer gameplay">
+			<div class="row">
+				<div class="col-sm-4">
+					<p></p>
+					<img src="assets/images/actinspace.png" class="pics-portfolio" alt="Actinspace tiles visualization">
+				</div>
+				<div class="col-sm-4">
+					<p></p>
+					<img src="assets/images/ads.png" class="pics-portfolio" alt="Python class projects">
+				</div>
+				<div class="col-sm-4"> 
+					<p></p>
+					<img src="assets/images/schoolprojects.png" class="pics-portfolio" alt="Pictionnary nodejs code">
+				</div>
 			</div>
-			<div class="col-sm-4"> 
-				<p></p>
-				<img src="assets/images/lotrsoundboard.png" class="pics-portfolio" alt="Lord of the Rings sounboard windows phone app">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<p></p>
-				<img src="" alt="Image">
-			</div>
-			<div class="col-sm-4">
-				<p></p>
-				<img src="assets/images/ads.png" class="pics-portfolio" alt="Python class projects">
-			</div>
-			<div class="col-sm-4"> 
-				<p></p>
-				<img src="assets/images/schoolprojects.png" class="pics-portfolio" alt="Pictionnary nodejs code">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<p></p>
-				<img src="assets/images/rsstomail.png" class="pics-portfolio" alt="Rss to mail script result">
-			</div>
-			<div class="col-sm-4">
-				<p></p>
-				<img src="" alt="Image">
-			</div>
-			<div class="col-sm-4"> 
-				<p></p>
-				<img src="" alt="Image">
+			<div class="row">
+				<div class="col-sm-4">
+					<p></p>
+					<img src="assets/images/rsstomail.png" class="pics-portfolio" alt="Rss to mail script result">
+				</div>
+				<div class="col-sm-4">
+					<p></p>
+					<img src="assets/images/drivingtraveltime.png" class="pics-portfolio" alt="Driving travel time script result">
+				</div>
+				<div class="col-sm-4"> 
+					<p></p>
+					<img src="assets/images/flightpricestracking.png" class="pics-portfolio" alt="Flight prices tracking script result">
+				</div>
 			</div>
 		</div>
 	</section>
-
-
-
-
 
 
 
@@ -757,19 +754,21 @@
 		});
 
 		$(window).scroll(function() {
-   			var hT = $('#skills-bars').offset().top,
-       		hH = $('#skills-bars').outerHeight(),
+   			var hT = $('#skills-title').offset().top,
+       		hH = $('#skills-title').outerHeight(),
+       		hTb = $('#skills-language').offset().top,
+       		hHb = $('#skills-language').outerHeight(),
        		wH = $(window).height(),
        		wS = $(this).scrollTop();
-   			if (wS > (hT+hH-wH)){
+   			if (wS > (hT+hH-wH) && wS < (hTb+hHb-wH)){
        			$(".progress-bar").each(function(){
 					each_bar_width = $(this).attr('aria-valuenow');
 					$(this).width(each_bar_width + '%');
 				});
-   			} else {
+   			}else if (wS < (hT+hH-wH) || wS > (hTb+hHb-wH)){
    				$(".progress-bar").each(function(){
 					$(this).width(0 + '%');
-				});
+				});	
    			}
 		});
 	</script>

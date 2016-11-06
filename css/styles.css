@@ -253,30 +253,12 @@ footer .glyphicon {
     display: inline-block;
 }
 
-
-
-
-
 .pics-portfolio {
     width: 60%;
     height: 60%;
+    box-shadow: 5px 5px 7px #888888;
 }
 
-
-
-
-
-
-
-
-
-
-
-.bg-4 { 
-    background-color: #2f2f2f;
-    color: #ffffff;
-}
-
-.images-portfolio {
-	width: 100%;
+#portfolio .col-sm-4 {
+    margin-bottom: 30px;
 }
