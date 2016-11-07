@@ -675,7 +675,7 @@
 
 
 	<section id="portfolio" class="container-fluid bg-white text-center section-content">
-		<div class="inline-flex">
+		<div id="portfolio-title" class="inline-flex">
 			<h3 class="glyphicon glyphicon-folder-open"></h3>
 			<h3>Personnal Projects</h3>
 		</div>
@@ -754,10 +754,10 @@
 		});
 
 		$(window).scroll(function() {
-   			var hT = $('#skills-title').offset().top,
-       		hH = $('#skills-title').outerHeight(),
-       		hTb = $('#skills-language').offset().top,
-       		hHb = $('#skills-language').outerHeight(),
+   			var hT = $('#experiences').offset().top,
+       		hH = $('#experiences').outerHeight(),
+       		hTb = $('#portfolio-title').offset().top,
+       		hHb = $('#portfolio-title').outerHeight(),
        		wH = $(window).height(),
        		wS = $(this).scrollTop();
    			if (wS > (hT+hH-wH) && wS < (hTb+hHb-wH)){
