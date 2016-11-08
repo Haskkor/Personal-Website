@@ -9,6 +9,10 @@ p {
     margin: 25px 0px;
 }
 
+p span {
+    font-style: italic;
+}
+
 em {
     font-style: normal;
     font-weight: bold;
@@ -97,10 +101,6 @@ footer .glyphicon {
 
 .section-content {
     padding: 80px 0px;
-}
-
-.section-content span {
-    font-style: italic;
 }
 
 .section-content h3 {
@@ -254,11 +254,61 @@ footer .glyphicon {
 }
 
 .pics-portfolio {
-    width: 60%;
-    height: 60%;
     box-shadow: 5px 5px 7px #888888;
 }
 
 #portfolio .col-sm-4 {
+    margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.effects .img {
+  position: relative;
+  width: 60%;
+}
+
+.effects .img img {
+  max-width: 100%;
+}
+
+#slide-left .overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+}
+
+#slide-left .overlay a.expand {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin: auto 0 auto -30px;
+}
+
+#slide-left .img.hover .overlay {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.icon-git-portfolio {
+    background: #00789d;
+    z-index: 20;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.icon-git-portfolio .icon {
+    padding-top: 12px;
 }

@@ -7,11 +7,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/circle.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/modernizr.js"></script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -400,7 +401,7 @@
 	</section>
 
 	<section id="skills" class="container-fluid bg-dark text-center section-content">
-		<div id="skills-title" class="inline-flex">
+		<div class="inline-flex">
 			<h3 class="glyphicon glyphicon-screenshot"></h3>
 			<h3>Skills</h3>
 		</div>
@@ -573,7 +574,7 @@
 					</div> 
 				</div> 
 			</div>
-			<div id="skills-language" class="row">
+			<div class="row">
 				<div class="col-sm-6">
 					<div class="panel panel-default text-center">
 						<div class="panel-heading">
@@ -675,52 +676,102 @@
 
 
 	<section id="portfolio" class="container-fluid bg-white text-center section-content">
-		<div id="portfolio-title" class="inline-flex">
+		<div class="inline-flex">
 			<h3 class="glyphicon glyphicon-folder-open"></h3>
 			<h3>Personnal Projects</h3>
 		</div>
 		<p><span>What have I done?</span></p>
-		<div class="container-fluid">
+		<div id="portfolio-content" class="container-fluid">
 			<div class="row">
-				<div class="col-sm-4">
-					<img src="assets/images/hotr.png" class="pics-portfolio" alt="Heroes of the Ring fight">
-				</div>
-				<div class="col-sm-4">
-					<p></p>
-					<img src="assets/images/miyasplatformer.png" class="pics-portfolio" alt="Miya's platformer gameplay">
-				</div>
-				<div class="col-sm-4"> 
-					<p></p>
-					<img src="assets/images/lotrsoundboard.png" class="pics-portfolio" alt="Lord of the Rings sounboard windows phone app">
-				</div>
+				<div id="slide-left" class="effects clearfix">
+					<div class="col-sm-4">
+			            <div class="img center-block">
+			                <img src="assets/images/hotr.png" class="pics-portfolio" alt="Heroes of the Ring fight">
+			                <span class="icon-git-portfolio">
+								<span class="glyphicon glyphicon-new-window icon"></span>
+							</span>
+			                <div class="overlay">
+			                    <a href="#" class="">
+			                    	This is a test to show a thing.<br>
+			                    	Is it ok ? Does it look good ?<br>
+			                    	Thanks bro' !
+			                    </a>
+			                </div>
+			            </div>
+		            </div>
+		            <div class="col-sm-4">
+			            <div class="img center-block">
+			                <img src="assets/images/miyasplatformer.png" class="pics-portfolio" alt="Miya's platformer gameplay">
+			                <div class="overlay">
+			                    <a href="#" class=""></a>
+			                </div>
+			            </div>
+		            </div>
+		            <div class="col-sm-4">
+			            <div class="img center-block">
+			                <img src="assets/images/lotrsoundboard.png" class="pics-portfolio" alt="Lord of the Rings sounboard windows phone app">
+			                <div class="overlay">
+			                    <a href="#" class=""></a>
+			                </div>
+			            </div>
+		            </div>
+		        </div>
 			</div>
 			<div class="row">
-				<div class="col-sm-4">
-					<p></p>
-					<img src="assets/images/actinspace.png" class="pics-portfolio" alt="Actinspace tiles visualization">
-				</div>
-				<div class="col-sm-4">
-					<p></p>
-					<img src="assets/images/ads.png" class="pics-portfolio" alt="Python class projects">
-				</div>
-				<div class="col-sm-4"> 
-					<p></p>
-					<img src="assets/images/schoolprojects.png" class="pics-portfolio" alt="Pictionnary nodejs code">
-				</div>
+				<div id="slide-left" class="effects clearfix">
+					<div class="col-sm-4">
+			            <div class="img center-block">
+			                <img src="assets/images/actinspace.png" class="pics-portfolio" alt="Actinspace tiles visualization">
+			                <div class="overlay">
+			                    <a href="#" class=""></a>
+			                </div>
+			            </div>
+		            </div>
+		            <div class="col-sm-4">
+			            <div class="img center-block">
+			                <img src="assets/images/ads.png" class="pics-portfolio" alt="Python class projects">
+			                <div class="overlay">
+			                    <a href="#" class=""></a>
+			                </div>
+			            </div>
+		            </div>
+		            <div class="col-sm-4">
+			            <div class="img center-block">
+			                <img src="assets/images/schoolprojects.png" class="pics-portfolio" alt="Pictionnary nodejs code">
+			                <div class="overlay">
+			                    <a href="#" class=""></a>
+			                </div>
+			            </div>
+		            </div>
+		        </div>
 			</div>
 			<div class="row">
-				<div class="col-sm-4">
-					<p></p>
-					<img src="assets/images/rsstomail.png" class="pics-portfolio" alt="Rss to mail script result">
-				</div>
-				<div class="col-sm-4">
-					<p></p>
-					<img src="assets/images/drivingtraveltime.png" class="pics-portfolio" alt="Driving travel time script result">
-				</div>
-				<div class="col-sm-4"> 
-					<p></p>
-					<img src="assets/images/flightpricestracking.png" class="pics-portfolio" alt="Flight prices tracking script result">
-				</div>
+				<div id="slide-left" class="effects clearfix">
+					<div class="col-sm-4">
+			            <div class="img center-block">
+			                <img src="assets/images/rsstomail.png" class="pics-portfolio" alt="Rss to mail script result">
+			                <div class="overlay">
+			                    <a href="#" class=""></a>
+			                </div>
+			            </div>
+		            </div>
+		            <div class="col-sm-4">
+			            <div class="img center-block">
+			                <img src="assets/images/drivingtraveltime.png" class="pics-portfolio" alt="Driving travel time script result">
+			                <div class="overlay">
+			                    <a href="#" class=""></a>
+			                </div>
+			            </div>
+		            </div>
+		            <div class="col-sm-4">
+			            <div class="img center-block">
+			                <img src="assets/images/flightpricestracking.png" class="pics-portfolio" alt="Flight prices tracking script result">
+			                <div class="overlay">
+			                    <a href="#" class=""></a>
+			                </div>
+			            </div>
+		            </div>
+		        </div>
 			</div>
 		</div>
 	</section>
@@ -754,23 +805,56 @@
 		});
 
 		$(window).scroll(function() {
-   			var hT = $('#experiences').offset().top,
-       		hH = $('#experiences').outerHeight(),
-       		hTb = $('#portfolio-title').offset().top,
-       		hHb = $('#portfolio-title').outerHeight(),
+   			var hT = $('#skills').offset().top,
+       		hTb = $('#portfolio-content').offset().top,
        		wH = $(window).height(),
        		wS = $(this).scrollTop();
-   			if (wS > (hT+hH-wH) && wS < (hTb+hHb-wH)){
+   			if (wS > (hT-wH) && wS < (hTb-wH)){
        			$(".progress-bar").each(function(){
 					each_bar_width = $(this).attr('aria-valuenow');
 					$(this).width(each_bar_width + '%');
 				});
-   			}else if (wS < (hT+hH-wH) || wS > (hTb+hHb-wH)){
+   			}else if (wS < (hT-wH) || wS > (hTb-wH)){
    				$(".progress-bar").each(function(){
 					$(this).width(0 + '%');
 				});	
    			}
 		});
+
+
+
+
+
+
+		$(document).ready(function(){
+	        if (Modernizr.touch) {
+	            // show the close overlay button
+	            $(".close-overlay").removeClass("hidden");
+	            // handle the adding of hover class when clicked
+	            $(".img").click(function(e){
+	                if (!$(this).hasClass("hover")) {
+	                    $(this).addClass("hover");
+	                }
+	            });
+	            // handle the closing of the overlay
+	            $(".close-overlay").click(function(e){
+	                e.preventDefault();
+	                e.stopPropagation();
+	                if ($(this).closest(".img").hasClass("hover")) {
+	                    $(this).closest(".img").removeClass("hover");
+	                }
+	            });
+	        } else {
+	            // handle the mouseenter functionality
+	            $(".img").mouseenter(function(){
+	                $(this).addClass("hover");
+	            })
+	            // handle the mouseleave functionality
+	            .mouseleave(function(){
+	                $(this).removeClass("hover");
+	            });
+	        }
+	    });
 	</script>
 
 </body>
