@@ -349,6 +349,8 @@ a.expand {
     width: 50%;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #contact h4 {
@@ -357,4 +359,19 @@ a.expand {
 
 #contact .fa {
     font-size: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#contact a {
+    color: #ffffff;
+}
+
+#contact a:hover {
+    color: #00789d;
+    text-decoration: none;
+}
+
+#contact .icon-details {
+    padding-right: 10px;
 }
