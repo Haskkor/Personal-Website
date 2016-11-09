@@ -335,3 +335,26 @@ a.expand {
     padding-top: 10px;
     font-size: 1.5em;
 }
+
+#contact .phrase {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ffffff;
+    border-bottom-color: rgba(255,255,255,0.35);
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#contact .row-contact {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#contact h4 {
+    padding: 0px 10px;
+}
+
+#contact .fa {
+    font-size: 2em;
+}
