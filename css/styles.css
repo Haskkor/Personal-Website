@@ -47,6 +47,11 @@ footer .glyphicon {
     color: #00789d;
 }
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background-color: #00789d;
+}
+
 .content-description {
     font-size: 13px;
 }
@@ -253,6 +258,12 @@ footer .glyphicon {
     display: inline-block;
 }
 
+.stars {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    color: #00789d;
+}
+
 .pics-portfolio {
     box-shadow: 5px 5px 7px #888888;
 }
@@ -263,38 +274,49 @@ footer .glyphicon {
 }
 
 .effects .img {
-  position: relative;
-  width: 60%;
+    position: relative;
+    width: 60%;
 }
 
 .effects .img img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 #slide-left .overlay {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
 }
 
 #slide-left .overlay a.expand {
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin: auto 0 auto -30px;
+    top: 0;
+    bottom: 0;
+    left: 10%;
 }
 
 #slide-left .img.hover .overlay {
-  width: 100%;
+    width: 100%;
+}
+
+a.expand {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 60px;
+    font-size: small;
 }
 
 .overlay {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.8);
-  overflow: hidden;
-  transition: all 1s;
+    position: absolute;
+    background: rgba(0, 120, 157, 0.8);
+    overflow: hidden;
+    transition: all 1s;
 }
 
 .icon-git-portfolio {
@@ -310,5 +332,6 @@ footer .glyphicon {
 }
 
 .icon-git-portfolio .icon {
-    padding-top: 12px;
+    padding-top: 10px;
+    font-size: 1.5em;
 }

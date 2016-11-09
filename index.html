@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/circle.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -29,7 +30,7 @@
 					<li><a href="#experiences"><span class="glyphicon glyphicon-time"></span>Experiences</a></li>
 					<li><a href="#skills"><span class="glyphicon glyphicon-screenshot"></span>Skills</a></li>
 					<li><a href="#portfolio"><span class="glyphicon glyphicon-folder-open"></span>Personal Projects</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-envelope"></span>Contact me</a></li>
+					<li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span>Contact me</a></li>
 				</ul>
 			</div>
 		</div>
@@ -594,7 +595,7 @@
 							<div class="col-sm-2">
 								<div class="inner-content text-center">
 									<p>Organized</p>
-									<div class="c100 p100 small blue center">
+									<div class="c100 p100 small darkgreen center">
 										<span>100%</span>
 										<div class="slice"><div class="bar"></div><div class="fill"></div></div>
 									</div>
@@ -603,7 +604,7 @@
 							<div class="col-sm-2">
 								<div class="inner-content text-center">
 									<p>Motivated</p>
-									<div class="c100 p100 small yellow center">
+									<div class="c100 p100 small darkorange center">
 										<span>100%</span>
 										<div class="slice"><div class="bar"></div><div class="fill"></div></div>
 									</div>
@@ -640,27 +641,36 @@
 							<div class="col-sm-4">
 								<div class="inner-content text-center">
 									<p>French (Native)</p>
-									<div class="c100 p100 small darkgreen center">
-										<span>100%</span>
-										<div class="slice"><div class="bar"></div><div class="fill"></div></div>
+									<div class="stars">
+										<span class="fa fa-star" aria-hidden="true"></span>
+										<span class="fa fa-star" aria-hidden="true"></span>
+										<span class="fa fa-star" aria-hidden="true"></span>
+										<span class="fa fa-star" aria-hidden="true"></span>
+										<span class="fa fa-star" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
 							<div class="col-sm-4">
 								<div class="inner-content text-center">
 									<p>English (Advanced)</p>
-									<div class="c100 p80 small darkorange center">
-										<span>80%</span>
-										<div class="slice"><div class="bar"></div><div class="fill"></div></div>
+									<div class="stars">
+										<span class="fa fa-star" aria-hidden="true"></span>
+										<span class="fa fa-star" aria-hidden="true"></span>
+										<span class="fa fa-star" aria-hidden="true"></span>
+										<span class="fa fa-star" aria-hidden="true"></span>
+										<span class="fa fa-star-half-o" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
 							<div class="col-sm-4">
 								<div class="inner-content text-center">
 									<p>German (Elementary)</p>
-									<div class="c100 p30 small darkbrown center">
-										<span>30%</span>
-										<div class="slice"><div class="bar"></div><div class="fill"></div></div>
+									<div class="stars">
+										<span class="fa fa-star" aria-hidden="true"></span>
+										<span class="fa fa-star" aria-hidden="true"></span>
+										<span class="fa fa-star-o" aria-hidden="true"></span>
+										<span class="fa fa-star-o" aria-hidden="true"></span>
+										<span class="fa fa-star-o" aria-hidden="true"></span>
 									</div>
 								</div>
 							</div>
@@ -670,10 +680,6 @@
 			</div>
 		</div>
 	</section>
-
-
-
-
 
 	<section id="portfolio" class="container-fluid bg-white text-center section-content">
 		<div class="inline-flex">
@@ -686,32 +692,51 @@
 				<div id="slide-left" class="effects clearfix">
 					<div class="col-sm-4">
 			            <div class="img center-block">
+			            	<a href="https://github.com/Haskkor/HoTR-Alpha">
 			                <img src="assets/images/hotr.png" class="pics-portfolio" alt="Heroes of the Ring fight">
 			                <span class="icon-git-portfolio">
-								<span class="glyphicon glyphicon-new-window icon"></span>
+								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
 			                <div class="overlay">
-			                    <a href="#" class="">
-			                    	This is a test to show a thing.<br>
-			                    	Is it ok ? Does it look good ?<br>
-			                    	Thanks bro' !
+			                    <a href="https://github.com/Haskkor/HoTR-Alpha" class="expand">
+			                    	Heroes of the Ring<br><br>
+			                    	Tactical turn-based card video game.<br>
+			                    	A mix of Heroes of Might and Magic, The Banner Saga, Warhammer, Magic and Chess.<br>
+			                    	In progress.<br><br>
+			                    	Tags: Python, Pygame
 			                    </a>
 			                </div>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
 			            <div class="img center-block">
+			            	<a href="https://github.com/Haskkor/Miya-Platformer">
 			                <img src="assets/images/miyasplatformer.png" class="pics-portfolio" alt="Miya's platformer gameplay">
+			                <span class="icon-git-portfolio">
+								<span class="fa fa-github icon" aria-hidden="true"></span>
+							</span>
 			                <div class="overlay">
-			                    <a href="#" class=""></a>
+			                    <a href="https://github.com/Haskkor/Miya-Platformer" class="expand">
+			                    	Miya's Platformer<br><br>
+			                    	Platformer made for my daughter, build to have a gradual learning curve. Need to add more levels.<br><br>
+			                    	Tags: Python, Pygame
+			                    </a>
 			                </div>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
 			            <div class="img center-block">
+			            	<a href="https://github.com/Haskkor/Csharp-Projects">
 			                <img src="assets/images/lotrsoundboard.png" class="pics-portfolio" alt="Lord of the Rings sounboard windows phone app">
+			                <span class="icon-git-portfolio">
+								<span class="fa fa-github icon" aria-hidden="true"></span>
+							</span>
 			                <div class="overlay">
-			                    <a href="#" class=""></a>
+			                    <a href="https://github.com/Haskkor/Csharp-Projects" class="expand">
+			                    	LoTR Soundboard<br><br>
+			                    	Windows Phone application. Allows to listen to the most iconic sounds of Lord of the Rings movies and to set them as ringtones.<br><br>
+			                    	Tags: C#, Windows Phone
+			                    </a>
 			                </div>
 			            </div>
 		            </div>
@@ -721,25 +746,49 @@
 				<div id="slide-left" class="effects clearfix">
 					<div class="col-sm-4">
 			            <div class="img center-block">
+			            	<a href="https://github.com/Haskkor/ActInSpace">
 			                <img src="assets/images/actinspace.png" class="pics-portfolio" alt="Actinspace tiles visualization">
+			                <span class="icon-git-portfolio">
+								<span class="fa fa-github icon" aria-hidden="true"></span>
+							</span>
 			                <div class="overlay">
-			                    <a href="#" class=""></a>
+			                    <a href="https://github.com/Haskkor/ActInSpace" class="expand">
+			                    	ActInSpace<br><br>
+			                    	Script writen for the ActInSpace challenge. 8 hours to use satellite images.<br><br>
+			                    	Tags: Python, Pygame, Thread
+			                    </a>
 			                </div>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
 			            <div class="img center-block">
+			            	<a href="https://github.com/Haskkor/ADS">
 			                <img src="assets/images/ads.png" class="pics-portfolio" alt="Python class projects">
+			                <span class="icon-git-portfolio">
+								<span class="fa fa-github icon" aria-hidden="true"></span>
+							</span>
 			                <div class="overlay">
-			                    <a href="#" class=""></a>
+			                    <a href="https://github.com/Haskkor/ADS" class="expand">
+			                    	Python Teaching Projects<br><br>
+			                    	Exercices used for the "Algorithimc and Python" class I teached. From learning what a variable is to build recursive programs with graphical interfaces.<br><br>
+			                    	Tags: Python, Pygame
+			                    </a>
 			                </div>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
 			            <div class="img center-block">
+			            	<a href="https://github.com/">
 			                <img src="assets/images/schoolprojects.png" class="pics-portfolio" alt="Pictionnary nodejs code">
+			                <span class="icon-git-portfolio">
+								<span class="fa fa-github icon" aria-hidden="true"></span>
+							</span>
 			                <div class="overlay">
-			                    <a href="#" class=""></a>
+			                    <a href="https://github.com/" class="expand">
+			                    	School Projects<br><br>
+			                    	Various school projects I made during my 3 years at SUPINFO International University.<br><br>
+			                    	Tags: C, C++, C#, Java, Javascript, Android
+			                    </a>
 			                </div>
 			            </div>
 		            </div>
@@ -749,25 +798,49 @@
 				<div id="slide-left" class="effects clearfix">
 					<div class="col-sm-4">
 			            <div class="img center-block">
+			            	<a href="https://github.com/Haskkor/Various">
 			                <img src="assets/images/rsstomail.png" class="pics-portfolio" alt="Rss to mail script result">
+			                <span class="icon-git-portfolio">
+								<span class="fa fa-github icon" aria-hidden="true"></span>
+							</span>
 			                <div class="overlay">
-			                    <a href="#" class=""></a>
+			                    <a href="https://github.com/Haskkor/Various" class="expand">
+			                    	Rss to Mail<br><br>
+			                    	Script used to parse RSS feeds and to build a mail with the collected data.<br><br>
+			                    	Tags: Python
+			                    </a>
 			                </div>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
 			            <div class="img center-block">
+			            	<a href="https://github.com/Haskkor/Various">
 			                <img src="assets/images/drivingtraveltime.png" class="pics-portfolio" alt="Driving travel time script result">
+			                <span class="icon-git-portfolio">
+								<span class="fa fa-github icon" aria-hidden="true"></span>
+							</span>
 			                <div class="overlay">
-			                    <a href="#" class=""></a>
+			                    <a href="https://github.com/Haskkor/Various" class="expand">
+			                    	Driving Travel Time<br><br>
+			                    	Script using the Google Maps API to check driving travel time between 2 points and to build a mail with the collected data.<br><br>
+			                    	Tags: Python, Google API
+			                    </a>
 			                </div>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
 			            <div class="img center-block">
+			            	<a href="https://github.com/Haskkor/Various">
 			                <img src="assets/images/flightpricestracking.png" class="pics-portfolio" alt="Flight prices tracking script result">
+			                <span class="icon-git-portfolio">
+								<span class="fa fa-github icon" aria-hidden="true"></span>
+							</span>
 			                <div class="overlay">
-			                    <a href="#" class=""></a>
+			                    <a href="https://github.com/Haskkor/Various" class="expand">
+			                    	Flight Prices Tracking<br><br>
+			                    	Script using the QPX Express API to track flight prices from a set of options and to build a mail if the prices hit a given amount.<br><br>
+			                    	Tags: Python, Google API 
+			                    </a>
 			                </div>
 			            </div>
 		            </div>
@@ -778,12 +851,31 @@
 
 
 
-	<footer class="container-fluid bg-4 text-center">
+
+	<section id="contact" class="container-fluid bg-dark text-center section-content">
+		<div class="inline-flex">
+			<h3 class="glyphicon glyphicon-envelope"></h3>
+			<h3>Contact</h3>
+		</div>
+		<p><span>How to reach me?</span></p>
+	</section>
+
+
+
+
+
+	<footer id="contact" class="container-fluid bg-white text-center">
 		<a href="#myPage" title="To Top">
 			<span class="glyphicon glyphicon-chevron-up"></span>
-		 </a>
-		<p>Je vogue à travers les étoiles</p> 
+		</a>
 	</footer>
+
+
+
+
+
+
+
 
 	<script>
 		$(document).ready(function(){
@@ -821,39 +913,13 @@
    			}
 		});
 
-
-
-
-
-
 		$(document).ready(function(){
-	        if (Modernizr.touch) {
-	            // show the close overlay button
-	            $(".close-overlay").removeClass("hidden");
-	            // handle the adding of hover class when clicked
-	            $(".img").click(function(e){
-	                if (!$(this).hasClass("hover")) {
-	                    $(this).addClass("hover");
-	                }
-	            });
-	            // handle the closing of the overlay
-	            $(".close-overlay").click(function(e){
-	                e.preventDefault();
-	                e.stopPropagation();
-	                if ($(this).closest(".img").hasClass("hover")) {
-	                    $(this).closest(".img").removeClass("hover");
-	                }
-	            });
-	        } else {
-	            // handle the mouseenter functionality
-	            $(".img").mouseenter(function(){
-	                $(this).addClass("hover");
-	            })
-	            // handle the mouseleave functionality
-	            .mouseleave(function(){
-	                $(this).removeClass("hover");
-	            });
-	        }
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
 	    });
 	</script>
 
