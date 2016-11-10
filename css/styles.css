@@ -1,3 +1,5 @@
+/* GENERAL */
+
 body {
     font: 20px "Montserrat", sans-serif;
     line-height: 1.8;
@@ -19,15 +21,11 @@ em {
     color: #00789d;
 }
 
-footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #00789d;
-}
-
 .inline-flex {
     display: inline-flex;
 }
+
+/* NAVBAR */
 
 .navbar {
     padding-top: 10px;
@@ -43,14 +41,20 @@ footer .glyphicon {
     color: #00789d !important;
 }
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #ffffff !important;
+    background-color: #00789d;
+}
+
 .navbar-inverse .navbar-brand:hover {
     color: #00789d;
 }
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-    color: #ffffff;
-    background-color: #00789d;
+.navbar .insist {
+    color: #ffffff !important;
 }
+
+/* START SECTION */
 
 .content-description {
     font-size: 13px;
@@ -94,6 +98,8 @@ footer .glyphicon {
     font-size: 12px;
 }
 
+/* SECTIONS */
+
 .bg-white { 
     background-color: #ffffff;
     color: #555555;
@@ -113,6 +119,8 @@ footer .glyphicon {
     padding: 0px 10px;
 }
 
+/* PROFILE SECTION */
+
 .pics-profile {
     border: 10px solid transparent;
     margin-bottom: 25px;
@@ -123,6 +131,8 @@ footer .glyphicon {
 .pics-profile:hover {
     border-color: #D3D3D3;
 }
+
+/* EDUCATION AND EXPERIENCES */
 
 .bg-dark .experience {
     margin-bottom: 20px;
@@ -183,6 +193,8 @@ footer .glyphicon {
 .content-experiences {
     text-align: left;
 }
+
+/* SKILLS */
 
 #skills-bars .col-sm-4 {
     padding-left: 50px;
@@ -264,6 +276,12 @@ footer .glyphicon {
     color: #00789d;
 }
 
+#skills .fa:hover {
+    color: #555555;
+}
+
+/* PORTFOLIO */
+
 .pics-portfolio {
     box-shadow: 5px 5px 7px #888888;
 }
@@ -336,6 +354,8 @@ a.expand {
     font-size: 1.5em;
 }
 
+/* CONTACT */
+
 #contact .phrase {
     padding-bottom: 30px;
     border-bottom: 1px solid #ffffff;
@@ -372,6 +392,24 @@ a.expand {
     text-decoration: none;
 }
 
-#contact .icon-details {
+.icon-details {
     padding-right: 10px;
+}
+
+#googleMap {
+    height:500px;
+    width:100%;
+}
+
+/* FOOTER */
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #00789d;
+}
+
+#footer p {
+    font-size: 12px;
+    font-style: italic;
 }
