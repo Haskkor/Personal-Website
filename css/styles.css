@@ -57,7 +57,7 @@ ul.nav li.icon {
     display: none;
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:1000px) {
     ul.nav li {
         display: none;
     }
@@ -67,7 +67,7 @@ ul.nav li.icon {
     }
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:1000px) {
     .navbar-header {
         width: 50%;
     }
