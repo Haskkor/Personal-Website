@@ -18,6 +18,15 @@ $(document).ready(function(){
   	});
 });
 
+// Navbar responsive
+function navFunction() {
+	var x = document.getElementById("myNav");
+	if (x.className === "nav navbar-nav navbar-right") {
+		x.className += " responsive";
+	} else {
+		x.className = "nav navbar-nav navbar-right";
+	}
+}
 
 // Smooth scroll
 $(window).scroll(function() {
@@ -41,9 +50,11 @@ $(window).scroll(function() {
 $(document).ready(function(){
     $(".img").mouseenter(function(){
         $(this).addClass("hover");
+        $(".expand").addClass("appears");
     })
     .mouseleave(function(){
         $(this).removeClass("hover");
+        $(".expand").removeClass("appears");
     });
 });
 

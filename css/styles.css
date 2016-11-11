@@ -4,6 +4,7 @@ body {
     font: 20px "Montserrat", sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
+    overflow-x: hidden;
 }
 
 p {
@@ -28,12 +29,10 @@ em {
 /* NAVBAR */
 
 .navbar {
-    padding-top: 10px;
-    padding-bottom: 10px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 5px;
 }
 
@@ -54,6 +53,49 @@ em {
     color: #ffffff !important;
 }
 
+ul.nav li.icon {
+    display: none;
+}
+
+@media screen and (max-width:680px) {
+    ul.nav li {
+        display: none;
+    }
+    ul.nav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .navbar-header {
+        width: 50%;
+    }
+    .navbar-collapse {
+        width: 50%;
+        margin: 0;
+    }
+    .nav-container {
+        display: flex;
+    }
+    ul.nav.responsive {
+        position: relative;
+    }
+    ul.nav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.nav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.nav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
 /* START SECTION */
 
 .content-description {
@@ -65,7 +107,7 @@ em {
 	background-size: cover;
 	text-align: -webkit-center;
 	margin-bottom: 0px;
-	padding-top: 15%;
+	padding-top: 10%;
     height: 100vh;
 }
 
@@ -74,11 +116,24 @@ em {
 	border-bottom: 1px solid #ffffff;
     border-bottom-color: rgba(255,255,255,0.35);
 	width: 30%;
+    font-size: 2.5vw;
 }
 
 .image-profile-top {
 	display: inline;
-	width: 300px;
+	width: 30%;
+}
+
+@media screen and (max-width:680px) {
+    .h1-name {
+        font-size: 3vw;
+    }
+    .image-profile-top {
+        display: none;
+    }
+    .bg-top {
+        padding-top: 40%;
+    }
 }
 
 .citation-top {
@@ -126,6 +181,15 @@ em {
     margin-bottom: 25px;
     width: 80%;
     height: 80%;
+}
+
+@media screen and (max-width:680px) {
+    .pics-profile {
+    border: 10px solid transparent;
+    margin-bottom: 10px;
+    width: 20%;
+    height: 20%;
+}
 }
 
 .pics-profile:hover {
@@ -306,12 +370,11 @@ em {
     left: 0;
     width: 0;
     height: 100%;
-}
-
-#slide-left .overlay a.expand {
-    top: 0;
-    bottom: 0;
-    left: 10%;
+    text-align: center;
+    position: absolute;
+    background: rgba(0, 120, 157, 0.8);
+    overflow: hidden;
+    transition: all 1.5s;
 }
 
 #slide-left .img.hover .overlay {
@@ -321,20 +384,19 @@ em {
 a.expand {
     display: block;
     position: absolute;
-    z-index: 100;
-    width: 300px;
-    height: 60px;
-    text-align: center;
     color: #ffffff;
-    margin-top: 60px;
-    font-size: small;
+    font-size: 0.75vw;
+    top: 25px;
+    left: 100px;
+    width: 95%;
+    right: 10px;
+    opacity: 0;
+    transition: all 1.5s;
 }
 
-.overlay {
-    position: absolute;
-    background: rgba(0, 120, 157, 0.8);
-    overflow: hidden;
-    transition: all 1s;
+#slide-left .img.hover a.expand.appears {
+    opacity: 1;
+    left: 10px;
 }
 
 .icon-git-portfolio {

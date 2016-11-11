@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-	<title>Jérémy Farnault - Developer</title>
+	<title>Jérémy Farnault - Full-Stack Developer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,24 +13,24 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsKNwpw72lIuTl9TMnph-dkco8tbLeA7Y"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 	
 	<nav class="navbar navbar-fixed-top navbar-inverse">
-		<div class="container-fluid">
+		<div class="container-fluid nav-container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#myPage">Jérémy Farnault - Developer</a>
+				<a class="navbar-brand" href="#myPage">Jérémy Farnault</a>
 			</div>
 			<div class="navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right" id="myNav">
 					<li><a href="#profile"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
 					<li><a href="#education"><span class="glyphicon glyphicon-education"></span>Education</a></li>
 					<li><a href="#experiences"><span class="glyphicon glyphicon-time"></span>Experiences</a></li>
 					<li><a href="#skills"><span class="fa fa-code" aria-hidden="true"></span>Skills</a></li>
-					<li><a href="#portfolio"><span class="glyphicon glyphicon-folder-open"></span>Personal Projects</a></li>
+					<li><a href="#portfolio"><span class="glyphicon glyphicon-folder-open"></span>Portfolio</a></li>
 					<li><a href="#contact" class="insist"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -43,18 +43,19 @@
 							<li><a target="_blank" href="https://drive.google.com/open?id=0B-cEmTF_QmdAYnBwWDJacXp5VFE">Tutorials (fr)</a></li> 
 						</ul>
 					</li>
+					<li class="icon">
+						<a href="javascript:void(0);" onclick="navFunction()">&#9776;</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<div id="test"></div>
-
 	<section class="container-fluid bg-top text-center">
 		<div class="container">
 			<h1 class="h1-name">Jérémy Farnault</h1>
 			<img src="assets/images/profile_pic.jpg" class="img-responsive img-circle image-profile-top" alt="Profile picture">
-			<p class="lead">Developer</p>
+			<p class="lead">Full-Stack Developer</p>
 			<div class="citation-top">
 				<p class="citation-top-text">All we have to decide is what to do with the time that is given us.</p>
 				<p class="citation-top-author">- J.R.R. Tolkien</p>
@@ -698,7 +699,7 @@
 	<section id="portfolio" class="container-fluid bg-white text-center section-content">
 		<div class="inline-flex">
 			<h3 class="glyphicon glyphicon-folder-open"></h3>
-			<h3>Personnal Projects</h3>
+			<h3>Portfolio</h3>
 		</div>
 		<p><span>What have I done?</span></p>
 		<div id="portfolio-content" class="container-fluid">
@@ -711,15 +712,14 @@
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
-			                <div class="overlay">
-			                    <a href="https://github.com/Haskkor/HoTR-Alpha" class="expand">
-			                    	Heroes of the Ring<br><br>
-			                    	Tactical turn-based card video game.<br>
-			                    	A mix of Heroes of Might and Magic, The Banner Saga, Warhammer, Magic and Chess.<br>
-			                    	In progress.<br><br>
-			                    	Tags: Python, Pygame
-			                    </a>
-			                </div>
+			                <div class="overlay"></div>
+		                    <a href="https://github.com/Haskkor/HoTR-Alpha" class="expand">
+		                    	Heroes of the Ring<br><br>
+		                    	Tactical turn-based card video game.<br>
+		                    	A mix of Heroes of Might and Magic, The Banner Saga, Warhammer, Magic and Chess.<br>
+		                    	In progress.<br><br>
+		                    	Tags: Python, Pygame
+		                    </a>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
@@ -729,13 +729,12 @@
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
-			                <div class="overlay">
-			                    <a href="https://github.com/Haskkor/Miya-Platformer" class="expand">
-			                    	Miya's Platformer<br><br>
-			                    	Platformer made for my daughter, build to have a gradual learning curve. Need to add more levels.<br><br>
-			                    	Tags: Python, Pygame
-			                    </a>
-			                </div>
+			                <div class="overlay"></div>
+		                    <a href="https://github.com/Haskkor/Miya-Platformer" class="expand">
+		                    	Miya's Platformer<br><br>
+		                    	Platformer made for my daughter, build to have a gradual learning curve. Need to add more levels.<br><br>
+		                    	Tags: Python, Pygame
+		                    </a>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
@@ -745,13 +744,12 @@
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
-			                <div class="overlay">
-			                    <a href="https://github.com/Haskkor/Csharp-Projects" class="expand">
-			                    	LoTR Soundboard<br><br>
-			                    	Windows Phone application. Allows to listen to the most iconic sounds of Lord of the Rings movies and to set them as ringtones.<br><br>
-			                    	Tags: C#, Windows Phone
-			                    </a>
-			                </div>
+			                <div class="overlay"></div>
+		                    <a href="https://github.com/Haskkor/Csharp-Projects" class="expand">
+		                    	LoTR Soundboard<br><br>
+		                    	Windows Phone application. Allows to listen to the most iconic sounds of Lord of the Rings movies and to set them as ringtones.<br><br>
+		                    	Tags: C#, Windows Phone
+		                    </a>
 			            </div>
 		            </div>
 		        </div>
@@ -765,29 +763,27 @@
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
-			                <div class="overlay">
-			                    <a href="https://github.com/Haskkor/ActInSpace" class="expand">
-			                    	ActInSpace<br><br>
-			                    	Script writen for the ActInSpace challenge. 8 hours to use satellite images.<br><br>
-			                    	Tags: Python, Pygame, Thread
-			                    </a>
-			                </div>
+			                <div class="overlay"></div>
+		                    <a href="https://github.com/Haskkor/ActInSpace" class="expand">
+		                    	ActInSpace<br><br>
+		                    	Script writen for the ActInSpace challenge. 8 hours to use satellite images.<br><br>
+		                    	Tags: Python, Pygame, Thread
+		                    </a>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
 			            <div class="img center-block">
 			            	<a href="https://github.com/Haskkor/ADS">
-			                <img src="assets/images/ads.png" class="pics-portfolio" alt="Python class projects">
+			                <img src="assets/images/course.png" class="pics-portfolio" alt="Python class projects">
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
-			                <div class="overlay">
-			                    <a href="https://github.com/Haskkor/ADS" class="expand">
-			                    	Python Teaching Projects<br><br>
-			                    	Exercices used for the "Algorithimc and Python" class I teached. From learning what a variable is to build recursive programs with graphical interfaces.<br><br>
-			                    	Tags: Python, Pygame
-			                    </a>
-			                </div>
+			                <div class="overlay"></div>
+		                    <a href="https://github.com/Haskkor/ADS" class="expand">
+		                    	Python Teaching Projects<br><br>
+		                    	Exercices used for the "Algorithimc and Python" class I teached. From learning what a variable is to build recursive programs with graphical interfaces.<br><br>
+		                    	Tags: Python, Pygame
+		                    </a>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
@@ -797,13 +793,12 @@
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
-			                <div class="overlay">
-			                    <a href="https://github.com/" class="expand">
-			                    	School Projects<br><br>
-			                    	Various school projects I made during my 3 years at SUPINFO International University.<br><br>
-			                    	Tags: C, C++, C#, Java, Javascript, Android
-			                    </a>
-			                </div>
+			                <div class="overlay"></div>
+		                    <a href="https://github.com/" class="expand">
+		                    	School Projects<br><br>
+		                    	Various school projects I made during my 3 years at SUPINFO International University.<br><br>
+		                    	Tags: C, C++, C#, Java, Javascript, Android
+		                    </a>
 			            </div>
 		            </div>
 		        </div>
@@ -817,13 +812,12 @@
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
-			                <div class="overlay">
-			                    <a href="https://github.com/Haskkor/Various" class="expand">
-			                    	Rss to Mail<br><br>
-			                    	Script used to parse RSS feeds and to build a mail with the collected data.<br><br>
-			                    	Tags: Python
-			                    </a>
-			                </div>
+			                <div class="overlay"></div>
+		                    <a href="https://github.com/Haskkor/Various" class="expand">
+		                    	Rss to Mail<br><br>
+		                    	Script used to parse RSS feeds of multiple websites and build a mail with the collected data.<br><br>
+		                    	Tags: Python
+		                    </a>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
@@ -833,13 +827,12 @@
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
-			                <div class="overlay">
-			                    <a href="https://github.com/Haskkor/Various" class="expand">
-			                    	Driving Travel Time<br><br>
-			                    	Script using the Google Maps API to check driving travel time between 2 points and to build a mail with the collected data.<br><br>
-			                    	Tags: Python, Google API
-			                    </a>
-			                </div>
+			                <div class="overlay"></div>
+		                    <a href="https://github.com/Haskkor/Various" class="expand">
+		                    	Driving Travel Time<br><br>
+		                    	Script using the Google Maps API to check driving travel time between 2 points and to build a mail with the collected data.<br><br>
+		                    	Tags: Python, Google API
+		                    </a>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
@@ -849,13 +842,12 @@
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
-			                <div class="overlay">
-			                    <a href="https://github.com/Haskkor/Various" class="expand">
-			                    	Flight Prices Tracking<br><br>
-			                    	Script using the QPX Express API to track flight prices from a set of options and to build a mail if the prices hit a given amount.<br><br>
-			                    	Tags: Python, Google API 
-			                    </a>
-			                </div>
+			                <div class="overlay"></div>
+		                    <a href="https://github.com/Haskkor/Various" class="expand">
+		                    	Flight Prices Tracking<br><br>
+		                    	Script using the QPX Express API to track flight prices from a set of options and to build a mail if the prices hit a given amount.<br><br>
+		                    	Tags: Python, Google API 
+		                    </a>
 			            </div>
 		            </div>
 		        </div>
