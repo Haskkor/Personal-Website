@@ -183,13 +183,13 @@ ul.nav li.icon {
     height: 80%;
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:1000px) {
     .pics-profile {
-    border: 10px solid transparent;
-    margin-bottom: 10px;
-    width: 20%;
-    height: 20%;
-}
+        border: 10px solid transparent;
+        margin-bottom: 10px;
+        width: 20%;
+        height: 20%;
+    }
 }
 
 .pics-profile:hover {
