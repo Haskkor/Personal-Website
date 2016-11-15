@@ -49,8 +49,11 @@ $(window).scroll(function() {
 // Portfolio images
 $(document).ready(function(){
     $(".img").mouseenter(function(){
-        $(this).addClass("hover");
-        $(".expand").addClass("appears");
+    	var viewportWidth = $(window).width();
+    	if (viewportWidth > 800) {
+	        $(this).addClass("hover");
+	        $(".expand").addClass("appears");
+	    }
     })
     .mouseleave(function(){
         $(this).removeClass("hover");

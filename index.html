@@ -15,6 +15,10 @@
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCsKNwpw72lIuTl9TMnph-dkco8tbLeA7Y"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css">
+	<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -69,9 +73,9 @@
 			<h3>Profile</h3>
 		</div>
 		<p><span>Who am I?</span></p>
-		<p>I'm a French, kiwi wannabe <em>full-stack</em> developer. I'm 31 years old and I'm currently living near Toulouse, France with my wife and two children. I'm pretty much of a <em>bookworm</em>, and particularly enjoy mangas and fantasy novels. I also love all kinds of <em>games</em>. Role playing games, card games, board games video games...you name it and I'm in! Last but not least, I love <em>sport</em>. I train every morning, 6 days a week, fitness, gym and cardio workouts.</p>
-		<p>I used to be a <em>boilermaker</em> in aeronautics. I hammered metal sheets for 7 years but I always knew it wasn't the right place for me. So I get my feet back in school and took <em>evening classes</em> for 2 years to obtain my High School degree. I always had a thing with computers so I decided to take a shoot at it and try to make my way in this domain. I kept the evening class going for 3 more years in the university to obtain my <em>Technology University degree in Informatics</em>. In the same time I got my <em>Technical Degree in Informatics</em> and had my first work experience in this field. Finally, I went to the prestigious <em>SUPINFO International University</em> and 3 years later, here I am with my <em>Master of Science in Informatics</em>!</p>
-		<p>My first job in my new favorite discipline was <em>Networks administrator</em>. University made me love development but I wasn't able to see what the job was like every day, so I took a step back and learned another job. After 3 years doing this, I jumped on an opportunity to switch for a <em>Systems administrator / Python developer</em> position in another company. Proving myself more than able as a developer, I've been offered a new job as a full-stack <em>JEE / AngularJS</em> developer for the next 2 years to build a skills management application. The mission eventually reaches its end and I'm currently on a <em>JEE / GWT</em> assignment. On a personal matter, I'm a huge fan of the <em>Python</em> language and I've had the opportunity to teach it to a class as <em>SUPINFO Certified Teacher</em>, which is my dearest experience so far.</p>
+		<p>I'm a French, kiwi wannabe <em>full-stack</em> developer. I'm 31 years old and I'm currently living near Toulouse, France with my wife and two children. I'm pretty much of a <em>bookworm</em>, and particularly enjoy mangas and fantasy literature. I also love all kinds of <em>games</em>: role-playing, card, board games, video games...you name it and I'm in! Last but not least, I love <em>sports</em>: I train every morning, 6 days a week (fitness, gym and cardio training).</p>
+		<p>I used to be a <em>boilermaker</em> in aeronautics. I hammered metal sheets for 7 years but I always knew it wasn't the right place for me. So I took <em>evening classes</em> for 2 years to obtain my High School degree. I always had a thing with computers so I decided to take a shot at it and try to make my way in this domain. I kept the evening class going for 3 more years in the university to obtain my <em>Technology University degree in Informatics</em>. In the same time I got my <em>Technical Degree in Informatics</em> and had my first work experience in this field. Finally, I went to the prestigious <em>SUPINFO International University</em> and 3 years later, here I am with my <em>Master of Science in Informatics</em>!</p>
+		<p>My first job in my new favourite discipline was <em>Networks administrator</em>. University made me love development but I wasn't able to see what the job was like every day, so I took a step back and learned another job. After 3 years doing this, I jumped on an opportunity to switch to a <em>Systems administrator / Python developer</em> position in another company. Proving myself more than able as a developer, I got offered a new job as a full-stack <em>JEE / AngularJS</em> developer for the next 2 years to build a skills management application. The mission eventually reached its end and I'm currently on a <em>JEE / GWT</em> assignment. On a personal note, I'm a huge fan of the <em>Python</em> language and I've had the opportunity to teach it to a class as <em>SUPINFO Certified Teacher</em>, which is my dearest experience so far.</p>
 		<div class="row">
 			<div class="col-sm-2">
 				<p><strong>Python</strong></p>
@@ -79,7 +83,7 @@
 			</div>
 			<div class="col-sm-2">
 				<p><strong>Books</strong></p>
-				<img src="assets/images/mangas.png" class="img-circle pics-profile" alt="Manga characters" data-toggle="tooltip" data-placement="bottom" title="A collection of 700 mangas and a huuuuge fan of J.R.R Tolkien!">
+				<img src="assets/images/mangas.jpg" class="img-circle pics-profile" alt="Manga characters" data-toggle="tooltip" data-placement="bottom" title="A collection of 700 mangas and a huuuuge fan of J.R.R Tolkien!">
 			</div>
 			<div class="col-sm-2">
 				<p><strong>Java</strong></p>
@@ -87,7 +91,7 @@
 			</div>
 			<div class="col-sm-2">
 				<p><strong>Games</strong></p>
-				<img src="assets/images/games.png" class="img-circle pics-profile" alt="Goblin with die" data-toggle="tooltip" data-placement="bottom" title="RPG player and role master (The One Ring, Pathfinder, Cthulhu etc.), board and card games lover!">
+				<img src="assets/images/games.jpg" class="img-circle pics-profile" alt="Goblin with die" data-toggle="tooltip" data-placement="bottom" title="RPG player and role master (The One Ring, Pathfinder, Cthulhu etc.), board and card games lover!">
 			</div>
 			<div class="col-sm-2">
 				<p><strong>AngularJS</strong></p>
@@ -95,7 +99,7 @@
 			</div>
 			<div class="col-sm-2">
 				<p><strong>Sport</strong></p>
-				<img src="assets/images/sport.png" class="img-circle pics-profile" alt="Sport logo" data-toggle="tooltip" data-placement="bottom" title="Success at anything will always come down to this: focus & effort. And we control both!">
+				<img src="assets/images/sport.jpg" class="img-circle pics-profile" alt="Sport logo" data-toggle="tooltip" data-placement="bottom" title="Success at anything will always come down to this: focus & effort. And we control both!">
 			</div>
 		</div>
 	</section>
@@ -107,88 +111,94 @@
 		</div>
 		<p><span>What have I learned?</span></p>
 		<div class="container">
-			<div class="experience row">
-				<div class="col-md-5">
-					<p class="experience-loc"><a href="https://www.supinfo.com/">SUPINFO International University</a></p>
-					<p class="experience-date">Nov 2013 - Oct 2016</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-thumbs-up"></span>
-							Reference: Kim LASCURETTES - Campus Manager			
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-earphone"></span>
-							+33 6 58 53 55 48				
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-envelope"></span>
-							<a href="mailto:kim.lascurettes@supinfo.com">kim.lascurettes@supinfo.com</a>				
-						</span>
-					</p>
+			<div class="experience row row-eq-height">
+				<div class="col-md-5 col-xs-12 vcenter">
+					<div>
+						<p class="experience-loc"><a target="_blank" href="https://www.supinfo.com/">SUPINFO International University</a></p>
+						<p class="experience-date">Nov 2013 - Oct 2016</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								Reference: Kim LASCURETTES - Campus Manager			
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-earphone"></span>
+								+33 6 58 53 55 48				
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-envelope"></span>
+								<a href="mailto:kim.lascurettes@supinfo.com">kim.lascurettes@supinfo.com</a>				
+							</span>
+						</p>
+					</div>
 				</div>
-				<div class="col-md-7">
+				<div class="col-md-7 col-xs-12">
 					<p class="experience-title">Master of Science - Informatics Expert</p>
 					<p class="content-description">
-						Following my aim of becoming an Informatic Engineer, I joined the renowned SUPINFO International University for 3 years. I firstly obtained a <em>Bachelor of Science</em>, then a <em>Bachelor of Science with Honours</em> and finally a <em>Master of Science</em>. I learned a great amount of different technologies such as <em>Java EE</em>, <em>Android</em>, <em>C#</em> or <em>Objective-C</em> development. I also followed classes concerning <em>Artifical Intelligence</em>, <em>Database administration</em> or <em>Big Data</em>. The final year of the cursus was mostly devoted to <em>Project Management</em>, <em>Emotional Intelligence</em>, <em>Entrepreneurship</em> and <em>Agile Methodology</em>. It is to mentioned that I've been appointed to be a member of the <em>SUPINFO Public Relations</em> during 2 years, a small group a students in charge of events organization such as open days or similar activities on the campus.
+						Following my aim of becoming an Informatics Engineer, I joined the renowned SUPINFO International University for 3 years. I firstly obtained a <em>Bachelor of Science</em>, then a <em>Bachelor of Science with Honours</em> and finally a <em>Master of Science</em>. I learned a great amount of different technologies such as <em>Java EE</em>, <em>Android</em>, <em>C#</em> or <em>Objective-C</em> development. I also followed classes about <em>Artifical Intelligence</em>, <em>Database administration</em> or <em>Big Data</em>. The final year of the cursus was mostly devoted to <em>Project Management</em>, <em>Emotional Intelligence</em>, <em>Entrepreneurship</em> and <em>Agile Methodology</em>. It is to be mentioned that I've been appointed to be a member of the <em>SUPINFO Public Relations</em> during 2 years, a small group of students in charge of events organization such as open days or similar activities on the campus.
 					</p>
 				</div>
 			</div>
-			<div class="experience row">
-				<div class="col-md-5">
-					<p class="experience-loc"><a href="http://www.ipst-cnam.fr/">IPST-CNAM</a></p>
-					<p class="experience-date">Sep 2010 - Jul 2013</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-thumbs-up"></span>
-							Reference: Jean-Paul CARRARA - Training Manager	
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-earphone"></span>
-							+33 5 61 55 87 23
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-envelope"></span>
-							<a href="mailto:jean-paul.carrara@iut-tlse3.fr">jean-paul.carrara@iut-tlse3.fr</a>
-						</span>
-					</p>
+			<div class="experience row row-eq-height">
+				<div class="col-md-5 vcenter">
+					<div>
+						<p class="experience-loc"><a target="_blank" href="http://www.ipst-cnam.fr/">IPST-CNAM</a></p>
+						<p class="experience-date">Sep 2010 - Jul 2013</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								Reference: Jean-Paul CARRARA - Training Manager	
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-earphone"></span>
+								+33 5 61 55 87 23
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-envelope"></span>
+								<a href="mailto:jean-paul.carrara@iut-tlse3.fr">jean-paul.carrara@iut-tlse3.fr</a>
+							</span>
+						</p>
+					</div>
 				</div>
 				<div class="col-md-7">
 					<p class="experience-title">Technology University degree in Informatics</p>
 					<p class="content-description">
-						When I got my high-school degree, I looked for a way to keep this evening classes going while heading towards the IT world. I found an opportunity in the biggest Toulouse university and joined a 3 years program where I learned <em>C</em>, <em>C++</em> and <em>Java</em> development as well as a lot of <em>algorithmic</em> and <em>mathematics</em>. It was with those awesome teachers that I discover my high interest for informatic programming.
+						When I got my high-school degree, I looked for a way to keep this evening classes going while heading towards the IT world. I found an opportunity in the biggest Toulouse university and joined a 3 years' program where I learned <em>C</em>, <em>C++</em> and <em>Java</em> development as well as a lot of <em>algorithmic</em> and <em>mathematics</em>. It was with those awesome teachers that I discovered my high interest for informatic programming.
 					</p>
 				</div>
 			</div>
-			<div class="experience row">
-				<div class="col-md-5">
-					<p class="experience-loc"><a href="https://www.adrar-formation.com/">ADRAR Formation</a></p>
-					<p class="experience-date">Sep 2011 - Jul 2013</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-thumbs-up"></span>
-							Reference: Amadou LY - Computer Science Teacher	
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-earphone"></span>
-							+33 6 19 77 44 82
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-envelope"></span>
-							<a href="mailto:aly@oasys-consulting.com">aly@oasys-consulting.com</a>			
-						</span>
-					</p>
+			<div class="experience row row-eq-height">
+				<div class="col-md-5 vcenter">
+					<div>
+						<p class="experience-loc"><a target="_blank" href="https://www.adrar-formation.com/">ADRAR Formation</a></p>
+						<p class="experience-date">Sep 2011 - Jul 2013</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								Reference: Amadou LY - Computer Science Teacher	
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-earphone"></span>
+								+33 6 19 77 44 82
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-envelope"></span>
+								<a href="mailto:aly@oasys-consulting.com">aly@oasys-consulting.com</a>			
+							</span>
+						</p>
+					</div>
 				</div>
 				<div class="col-md-7">
 					<p class="experience-title">Technical degree in Informatics</p>
@@ -197,10 +207,12 @@
 					</p>
 				</div>
 			</div>
-			<div class="experience row">
-				<div class="col-md-5">
-					<p class="experience-loc"><a href="http://www.ipst-cnam.fr/">IPST-CNAM</a></p>
-					<p class="experience-date">Sep 2009 - Jul 2011</p>
+			<div class="experience row row-eq-height">
+				<div class="col-md-5 vcenter">
+					<div>
+						<p class="experience-loc"><a target="_blank" href="http://www.ipst-cnam.fr/">IPST-CNAM</a></p>
+						<p class="experience-date">Sep 2009 - Jul 2011</p>
+					</div>
 				</div>
 				<div class="col-md-7">
 					<p class="experience-title">High-school degree</p>
@@ -209,10 +221,12 @@
 					</p>
 				</div>
 			</div>
-			<div class="experience row">
-				<div class="col-md-5">
-					<p class="experience-loc"><a href="https://www.afpa.fr/">AFPA</a></p>
-					<p class="experience-date">Jan 2007 - Sep 2007</p>
+			<div class="experience row row-eq-height">
+				<div class="col-md-5 vcenter">
+					<div>
+						<p class="experience-loc"><a target="_blank" href="https://www.afpa.fr/">AFPA</a></p>
+						<p class="experience-date">Jan 2007 - Sep 2007</p>
+					</div>
 				</div>
 				<div class="col-md-7">
 					<p class="experience-title">Vocational certificate in Aeronautics boiler making</p>
@@ -231,36 +245,38 @@
 		</div>
 		<p><span>Where did I work?</span></p>
 		<div class="container">
-			<div class="experience row">
-				<div class="col-md-5">
-					<p class="experience-loc"><a href="http://www.gfi.world/fr/">Gfi Informatique</a></p>
-					<p class="experience-date">Jan 2015 - Nov 2016</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-thumbs-up"></span>
-							Reference: Sylvain CORNU - Director of Operations		
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-earphone"></span>
-							+33 6 40 13 56 36			
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-envelope"></span>
-							<a href="mailto:sylvain.cornu@gfi.fr">sylvain.cornu@gfi.fr</a>				
-						</span>
-					</p>
-					<p class="experience-environment">Environment:</p>
-					<p class="experience-details">Agile, JEE, AngularJS, HTML, CSS, D3.js, Javascript, Eclipse, Sass, Spring, Hibernate, Bower, Grunt, Maven, Jenkins, SVN, Mantis</p>
+			<div class="experience row row-eq-height">
+				<div class="col-md-5 vcenter">
+					<div>
+						<p class="experience-loc"><a target="_blank" href="http://www.gfi.world/fr/">Gfi Informatique</a></p>
+						<p class="experience-date">Jan 2015 - Nov 2016</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								Reference: Sylvain CORNU - Director of Operations		
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-earphone"></span>
+								+33 6 40 13 56 36			
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-envelope"></span>
+								<a href="mailto:sylvain.cornu@gfi.fr">sylvain.cornu@gfi.fr</a>				
+							</span>
+						</p>
+						<p class="experience-environment">Environment:</p>
+						<p class="experience-details">Agile, JEE, AngularJS, HTML, CSS, D3.js, Javascript,<br>Eclipse, Sass, Spring, Hibernate, Bower, Grunt, Maven,<br>Jenkins, SVN, Mantis</p>
+					</div>
 				</div>
 				<div class="col-md-7">
 					<p class="experience-title">Full-stack Developer - GComp</p>
 					<p class="content-description content-experiences">
 						GComp is a <em>skills management application</em>. Employees fill in their skills, experiences and formations for managers, human ressources or sales people to use in the purpose of improving the company functionnal process.<br>
-						My job was to <em>develop features</em> and to maintain the application in an <em>operational state</em>.<br>
+						My job was to <em>develop features</em> and to maintain the application <em>operational</em>.<br>
 						The project used the <em>Agile methods</em> with a periodically rotating <em>Scrum Master</em> among the team members.<br>
 						<em>Features examples:</em><br>
 						Adding visual components like Word cloud, Pie chart or Radar chart.<br>
@@ -273,135 +289,143 @@
 					</p>
 				</div>
 			</div>
-			<div class="experience row">
-				<div class="col-md-5">
-					<p class="experience-loc"><a href="https://www.supinfo.com/">SUPINFO International University</a></p>
-					<p class="experience-date">Nov 2015 - Jun 2016</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-thumbs-up"></span>
-							Reference: Kim LASCURETTES - Campus Manager			
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-earphone"></span>
-							+33 6 58 53 55 48				
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-envelope"></span>
-							<a href="mailto:kim.lascurettes@supinfo.com">kim.lascurettes@supinfo.com</a>				
-						</span>
-					</p>
-					<p class="experience-environment">Environment:</p>
-					<p class="experience-details">Python, Pygame, PyCharm</p>
+			<div class="experience row row-eq-height">
+				<div class="col-md-5 vcenter">
+					<div>
+						<p class="experience-loc"><a target="_blank" href="https://www.supinfo.com/">SUPINFO International University</a></p>
+						<p class="experience-date">Nov 2015 - Jun 2016</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								Reference: Kim LASCURETTES - Campus Manager			
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-earphone"></span>
+								+33 6 58 53 55 48				
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-envelope"></span>
+								<a href="mailto:kim.lascurettes@supinfo.com">kim.lascurettes@supinfo.com</a>				
+							</span>
+						</p>
+						<p class="experience-environment">Environment:</p>
+						<p class="experience-details">Python, Pygame, PyCharm</p>
+					</div>
 				</div>
 				<div class="col-md-7">
 					<p class="experience-title">SUPINFO Certified Teacher - Python and Algorithmics</p>
 					<p class="content-description content-experiences">
 						SUPINFO International University trains <em>engineers in computer science</em> and delivers an International Master of Science certified by French government.<br>
-						At SUPINFO, deserving students have been offered the opportunity to <em>teach their favorite course</em> to other students. After a <em>theoretical and practical validation</em> of my knowledge by a reference teacher, I was awarded by the <em>SCT (Supinfo Certified Teacher) certification</em> for the 1ADS course (<em>Algorithmic and Python</em>). From there, I could teach to students of previous promotions and progress in my learning.<br>
-						In addition of taking in charge the students formation, I had to <em>examine and correct</em> their exercices and projects.<br> 
-						I also had the chance of being named <em>jury member</em> on the technical side for the end year project presentation of the first and fourth years students.
+						At SUPINFO, deserving students have been offered the opportunity to <em>teach their favourite course</em> to other students. After a <em>theoretical and practical validation</em> of my knowledge by a reference teacher, I was awarded by the <em>SCT (Supinfo Certified Teacher) certification</em> for the 1ADS course (<em>Algorithmic and Python</em>). From there, I could teach to students of previous promotions and progress in my learning.<br>
+						In addition to taking in charge the students formation, I had to <em>examine and correct</em> their exercises and projects.<br> 
+						I also had the chance to be named <em>jury member</em> on the technical side for the end year project presentation of the first and fourth years' students.
 					</p>
 				</div>
 			</div>
-			<div class="experience row">
-				<div class="col-md-5">
-					<p class="experience-loc"><a href="http://www.gfi.world/fr/">Gfi Informatique</a></p>
-					<p class="experience-date">Oct 2014 - Jan 2015</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-thumbs-up"></span>
-							Reference: Benoit CHAUVEAU - Project Leader	
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-earphone"></span>
-							+33 6 81 08 17 21		
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-envelope"></span>
-							<a href="mailto:benoit.chauveau@gfi.fr">benoit.chauveau@gfi.fr</a>				
-						</span>
-					</p>
-					<p class="experience-environment">Environment:</p>
-					<p class="experience-details">Python, Linux, PyQT, Redhat, Batch Scripting, LSF, Jira, iShare, C-Maphore</p>
+			<div class="experience row row-eq-height">
+				<div class="col-md-5 vcenter">
+					<div>
+						<p class="experience-loc"><a target="_blank" href="http://www.gfi.world/fr/">Gfi Informatique</a></p>
+						<p class="experience-date">Oct 2014 - Jan 2015</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								Reference: Benoit CHAUVEAU - Project Leader	
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-earphone"></span>
+								+33 6 81 08 17 21		
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-envelope"></span>
+								<a href="mailto:benoit.chauveau@gfi.fr">benoit.chauveau@gfi.fr</a>				
+							</span>
+						</p>
+						<p class="experience-environment">Environment:</p>
+						<p class="experience-details">Python, Linux, PyQT, Redhat, Batch Scripting, LSF, Jira,<br>iShare, C-Maphore</p>
+					</div>
 				</div>
 				<div class="col-md-7">
 					<p class="experience-title">Python Developer / System Administrator - Bundle FD</p>
 					<p class="content-description content-experiences">
-						Bundle FD is a <em>Scientific Computing</em> project whose role is to administer the GISEH cluster and the HPC servers for <em>Airbus</em>.<br>
-						I had for mission to develop tools in <em>Python</em> for automating repetitive tasks on the servers administration such as licencing administration or servers status. At the end of my mission I was asked to create an <em>user interface</em> with <em>PyQT</em> gathering all my other scripts in the purpose of making them usable by anyone.<br>
-						In my other assignments, I had to help the team for the <em>ticketing</em> and the <em>troubleshooting</em> of the clusters (dependecies checkings, licensing administration, troubleshooting and debugging) and I also had to write an <em>iShare tickets treatment process</em>.<br>
+						Bundle FD is a <em>Scientific Computing</em> project which role is to administrate the GISEH cluster and the HPC servers for <em>Airbus</em>.<br>
+						My mission was to to develop tools in <em>Python</em> to automate repetitive tasks on the servers administration such as licencing administration or servers status. At the end of my mission I was asked to create an <em>user interface</em> with <em>PyQT</em> gathering all my other scripts in the purpose of making them usable by anyone.<br>
+						In my other assignments, I had to help the team for the <em>ticketing</em> and the <em>troubleshooting</em> of the clusters (dependecies checking, licensing administration, troubleshooting and debugging). I also had to write an <em>iShare tickets treatment process</em>.<br>
 					</p>
 				</div>
 			</div>
-			<div class="experience row">
-				<div class="col-md-5">
-					<p class="experience-loc"><a href="http://www.cirso.fr">CIRSO</a></p>
-					<p class="experience-date">Sept 2011 - Sep 2014</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-thumbs-up"></span>
-							Reference: François LAFFONT - Network Team Leader	
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-earphone"></span>
-							+33 5 61 61 64 02		
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-envelope"></span>
-							<a href="mailto:francois.laffont@cirso.fr">francois.laffont@cirso.fr</a>				
-						</span>
-					</p>
-					<p class="experience-environment">Environment:</p>
-					<p class="experience-details">Cisco IOS, Nortel, Cacti, WhatsUpGold, glpi</p>
+			<div class="experience row row-eq-height">
+				<div class="col-md-5 vcenter">
+					<div>
+						<p class="experience-loc"><a target="_blank" href="http://www.cirso.fr">CIRSO</a></p>
+						<p class="experience-date">Sept 2011 - Sep 2014</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								Reference: François LAFFONT - Network Team Leader	
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-earphone"></span>
+								+33 5 61 61 64 02		
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-envelope"></span>
+								<a href="mailto:francois.laffont@cirso.fr">francois.laffont@cirso.fr</a>				
+							</span>
+						</p>
+						<p class="experience-environment">Environment:</p>
+						<p class="experience-details">Cisco IOS, Nortel, Cacti, WhatsUpGold, glpi</p>
+					</div>
 				</div>
 				<div class="col-md-7">
 					<p class="experience-title">Networks Administrator - CST-Rx</p>
 					<p class="content-description content-experiences">
 						The CIRSO declines its activity according to national or regional tasks assigned by ACOSS.<br>
-						For 3 years I was a member of the CST-Rx team whose missions are to <em>maintain and supervise the network</em> of French URSSAF.<br>
+						For 3 years I was a member of the CST-Rx team whose mission is to <em>maintain and supervise the network</em> of French URSSAF.<br>
 						My main mission was the <em>supervision</em> of the 130 national URSSAF networks. I had in charge the ticketing, the diagnostic and the level 2 and 3 response. I took care of the users management, the Internet operators management, the hardware, the supervision tools and the technical documentation redaction.<br>
 						I was also appointed on the LAN URSSAF / LAN CAMPUS mission. During a few months, I <em>restructured the switching network</em> of the URSSAF of the French southwest region and of our own site. I was the main CST-Rx team member on this task, so I had to <em>model, configure the hardware and deploy the new gears</em> in 19 locations.<br>
 						This last operation being a success, I have next been entrusted with the OptiWAN mission which was to set up the WAN optimization on the same sites than before. I had in charge to add WAN optimizers (<em>Cisco WAAS</em>) in the switching networks of the 19 URSSAF (configuration, deployment and validation).<br>
 					</p>
 				</div>
 			</div>
-			<div class="experience row">
-				<div class="col-md-5">
-					<p class="experience-loc"><a href="http://www.mecahers.fr/">MECAHERS</a></p>
-					<p class="experience-date">Jan 2005 - Sep 2011</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-thumbs-up"></span>
-							Reference: Emmanuel GAYRARD - Supply Chain Director
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-earphone"></span>
-							+33 5 62 79 87 87	
-						</span>
-					</p>
-					<p class="experience-details inline-flex">
-						<span>
-							<span class="glyphicon glyphicon-envelope"></span>
-							<a href="mailto:emmanuel.gayrard@mecahers.fr">emmanuel.gayrard@mecahers.fr</a>				
-						</span>
-					</p>
-					<p class="experience-environment">Environment:</p>
-					<p class="experience-details">Kanban, Lean</p>
+			<div class="experience row row-eq-height">
+				<div class="col-md-5 vcenter">
+					<div>
+						<p class="experience-loc"><a target="_blank" href="http://www.mecahers.fr/">MECAHERS</a></p>
+						<p class="experience-date">Jan 2005 - Sep 2011</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								Reference: Emmanuel GAYRARD - Supply Chain Director
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-earphone"></span>
+								+33 5 62 79 87 87	
+							</span>
+						</p>
+						<p class="experience-details inline-flex">
+							<span>
+								<span class="glyphicon glyphicon-envelope"></span>
+								<a href="mailto:emmanuel.gayrard@mecahers.fr">emmanuel.gayrard@mecahers.fr</a>				
+							</span>
+						</p>
+						<p class="experience-environment">Environment:</p>
+						<p class="experience-details">Kanban, Lean</p>
+					</div>
 				</div>
 				<div class="col-md-7">
 					<p class="experience-title">Aeronautic Boilermaker - A320</p>
@@ -707,13 +731,13 @@
 				<div id="slide-left" class="effects clearfix">
 					<div class="col-sm-4">
 			            <div class="img center-block">
-			            	<a href="https://github.com/Haskkor/HoTR-Alpha">
+			            	<a target="_blank" href="https://github.com/Haskkor/HoTR-Alpha">
 			                <img src="assets/images/hotr.png" class="pics-portfolio" alt="Heroes of the Ring fight">
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
 			                <div class="overlay"></div>
-		                    <a href="https://github.com/Haskkor/HoTR-Alpha" class="expand">
+		                    <a target="_blank" href="https://github.com/Haskkor/HoTR-Alpha" class="expand">
 		                    	Heroes of the Ring<br><br>
 		                    	Tactical turn-based card video game.<br>
 		                    	A mix of Heroes of Might and Magic, The Banner Saga, Warhammer, Magic and Chess.<br>
@@ -724,13 +748,13 @@
 		            </div>
 		            <div class="col-sm-4">
 			            <div class="img center-block">
-			            	<a href="https://github.com/Haskkor/Miya-Platformer">
+			            	<a target="_blank" href="https://github.com/Haskkor/Miya-Platformer">
 			                <img src="assets/images/miyasplatformer.png" class="pics-portfolio" alt="Miya's platformer gameplay">
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
 			                <div class="overlay"></div>
-		                    <a href="https://github.com/Haskkor/Miya-Platformer" class="expand">
+		                    <a target="_blank" href="https://github.com/Haskkor/Miya-Platformer" class="expand">
 		                    	Miya's Platformer<br><br>
 		                    	Platformer made for my daughter, built to have a gradual learning curve. Need to add more levels.<br><br>
 		                    	Tags: Python, Pygame
@@ -739,13 +763,13 @@
 		            </div>
 		            <div class="col-sm-4">
 			            <div class="img center-block">
-			            	<a href="https://github.com/Haskkor/Csharp-Projects">
+			            	<a target="_blank" href="https://github.com/Haskkor/Csharp-Projects">
 			                <img src="assets/images/lotrsoundboard.png" class="pics-portfolio" alt="Lord of the Rings sounboard windows phone app">
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
 			                <div class="overlay"></div>
-		                    <a href="https://github.com/Haskkor/Csharp-Projects" class="expand">
+		                    <a target="_blank" href="https://github.com/Haskkor/Csharp-Projects" class="expand">
 		                    	LoTR Soundboard<br><br>
 		                    	Windows Phone application. Allows to listen to the most iconic sounds of Lord of the Rings movies and to set them as ringtones.<br><br>
 		                    	Tags: C#, Windows Phone
@@ -758,43 +782,43 @@
 				<div id="slide-left" class="effects clearfix">
 					<div class="col-sm-4">
 			            <div class="img center-block">
-			            	<a href="https://github.com/Haskkor/ActInSpace">
+			            	<a target="_blank" href="https://github.com/Haskkor/ActInSpace">
 			                <img src="assets/images/actinspace.png" class="pics-portfolio" alt="Actinspace tiles visualization">
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
 			                <div class="overlay"></div>
-		                    <a href="https://github.com/Haskkor/ActInSpace" class="expand">
+		                    <a target="_blank" href="https://github.com/Haskkor/ActInSpace" class="expand">
 		                    	ActInSpace<br><br>
-		                    	Script writen for the ActInSpace challenge. 8 hours to use satellite images.<br><br>
+		                    	Script written for the ActInSpace challenge. 8 hours to use satellite images.<br><br>
 		                    	Tags: Python, Pygame, Thread
 		                    </a>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
 			            <div class="img center-block">
-			            	<a href="https://github.com/Haskkor/ADS">
+			            	<a target="_blank" href="https://github.com/Haskkor/ADS">
 			                <img src="assets/images/course.png" class="pics-portfolio" alt="Python class projects">
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
 			                <div class="overlay"></div>
-		                    <a href="https://github.com/Haskkor/ADS" class="expand">
+		                    <a target="_blank" href="https://github.com/Haskkor/ADS" class="expand">
 		                    	Python Teaching Projects<br><br>
-		                    	Exercices used for the "Algorithimc and Python" class I teached. From learning what a variable is to build recursive programs with graphical interfaces.<br><br>
+		                    	Exercises used for the "Algorithmic and Python" class I teached. From learning what a variable is to building recursive programs with graphic interfaces.<br><br>
 		                    	Tags: Python, Pygame
 		                    </a>
 			            </div>
 		            </div>
 		            <div class="col-sm-4">
 			            <div class="img center-block">
-			            	<a href="https://github.com/">
+			            	<a target="_blank" href="https://github.com/">
 			                <img src="assets/images/schoolprojects.png" class="pics-portfolio" alt="Pictionnary nodejs code">
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
 			                <div class="overlay"></div>
-		                    <a href="https://github.com/" class="expand">
+		                    <a target="_blank" href="https://github.com/" class="expand">
 		                    	School Projects<br><br>
 		                    	Various school projects I made during my 3 years at SUPINFO International University.<br><br>
 		                    	Tags: C, C++, C#, Java, Javascript, Android
@@ -807,13 +831,13 @@
 				<div id="slide-left" class="effects clearfix">
 					<div class="col-sm-4">
 			            <div class="img center-block">
-			            	<a href="https://github.com/Haskkor/Various">
+			            	<a target="_blank" href="https://github.com/Haskkor/Various">
 			                <img src="assets/images/rsstomail.png" class="pics-portfolio" alt="Rss to mail script result">
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
 			                <div class="overlay"></div>
-		                    <a href="https://github.com/Haskkor/Various" class="expand">
+		                    <a target="_blank" href="https://github.com/Haskkor/Various" class="expand">
 		                    	Rss to Mail<br><br>
 		                    	Script used to parse RSS feeds of multiple websites and build a mail with the collected data.<br><br>
 		                    	Tags: Python
@@ -822,34 +846,55 @@
 		            </div>
 		            <div class="col-sm-4">
 			            <div class="img center-block">
-			            	<a href="https://github.com/Haskkor/Various">
+			            	<a target="_blank" href="https://github.com/Haskkor/Various">
 			                <img src="assets/images/drivingtraveltime.png" class="pics-portfolio" alt="Driving travel time script result">
 			                <span class="icon-git-portfolio">
 								<span class="fa fa-github icon" aria-hidden="true"></span>
 							</span>
 			                <div class="overlay"></div>
-		                    <a href="https://github.com/Haskkor/Various" class="expand">
+		                    <a target="_blank" href="https://github.com/Haskkor/Various" class="expand">
 		                    	Driving Travel Time<br><br>
 		                    	Script using the Google Maps API to check driving travel time between 2 points and to build a mail with the collected data.<br><br>
 		                    	Tags: Python, Google API
 		                    </a>
 			            </div>
 		            </div>
+
+
+
 		            <div class="col-sm-4">
 			            <div class="img center-block">
-			            	<a href="https://github.com/Haskkor/Various">
-			                <img src="assets/images/flightpricestracking.png" class="pics-portfolio" alt="Flight prices tracking script result">
-			                <span class="icon-git-portfolio">
-								<span class="fa fa-github icon" aria-hidden="true"></span>
+			            	<a target="_blank" href="https://github.com/Haskkor/Various">
+				                <img src="assets/images/flightpricestracking.png" class="pics-portfolio" alt="Flight prices tracking script result">
+				                <span class="icon-git-portfolio">
+									<span class="fa fa-github icon" aria-hidden="true"></span>
+								</span>
+								<div class="overlay"></div>
+							</a>
+
+
+
+
+							<span class="icon-zoom-portfolio">
+								<span class="fa fa-search-plus" aria-hidden="true">
+									
+								</span>
 							</span>
-			                <div class="overlay"></div>
-		                    <a href="https://github.com/Haskkor/Various" class="expand">
+
+
+
+
+		                    <a target="_blank" href="https://github.com/Haskkor/Various" class="expand">
 		                    	Flight Prices Tracking<br><br>
 		                    	Script using the QPX Express API to track flight prices from a set of options and to build a mail if the prices hit a given amount.<br><br>
 		                    	Tags: Python, Google API 
 		                    </a>
 			            </div>
 		            </div>
+
+
+
+
 		        </div>
 			</div>
 		</div>
@@ -861,24 +906,24 @@
 			<h3>Contact</h3>
 		</div>
 		<p><span>How to reach me?</span></p>
-		<p class="phrase">Feel free to reach out to me if you have any questions, if you want to offer me a job or if you just want to say hi!</p>
+		<p class="phrase">Feel free to reach out to me if you have any questions,<br>if you want to offer me a job or if you just want to say hi!</p>
 		<div class="row row-contact">
 			<a href="mailto:jeremy.farnault@free.fr">
 				<span class="fa fa-envelope" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Mail"></span>
 			</a>
-			<a href="https://fr.linkedin.com/in/jérémy-farnault-817027b9">
+			<a target="_blank" href="https://fr.linkedin.com/in/jérémy-farnault-817027b9">
 					<span class="fa fa-linkedin-square" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Linkedin"></span>
 				</a>
-			<a href="https://github.com/Haskkor">
+			<a target="_blank" href="https://github.com/Haskkor">
 				<span class="fa fa-github-square" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Github"></span>
 			</a>
-			<a href="https://www.facebook.com/johnronaldreuel.mccartney">
+			<a target="_blank" href="https://www.facebook.com/johnronaldreuel.mccartney">
 				<span class="fa fa-facebook-square" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Facebook"></span>
 			</a>
-			<a href="https://twitter.com/JeremyFarnault">
+			<a target="_blank" href="https://twitter.com/JeremyFarnault">
 				<span class="fa fa-twitter-square" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Twitter"></span>
 			</a>
-			<a href="https://plus.google.com/u/0/106535228359848254880">
+			<a target="_blank" href="https://plus.google.com/u/0/106535228359848254880">
 				<span class="fa fa-google-plus-square" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Google+"></span>
 			</a>
 		</div>
