@@ -456,6 +456,10 @@ a.expand {
     font-size: 1.5em;
 }
 
+.icon-zoom-portfolio .icon {
+    padding-top: 7px;
+}
+
 /* CONTACT */
 
 #contact .phrase {
