@@ -26,6 +26,10 @@ em {
     display: inline-flex;
 }
 
+.align-left {
+    text-align: left;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -458,6 +462,12 @@ a.expand {
 
 .icon-zoom-portfolio .icon {
     padding-top: 7px;
+}
+
+.text-modal {
+    text-align: center;
+    font-size: 12px;
+    white-space: pre-line;
 }
 
 /* CONTACT */
