@@ -125,6 +125,8 @@ ul.nav li.icon {
     border-bottom-color: rgba(255,255,255,0.35);
 	width: 30%;
     font-size: 2.45vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .image-profile-top {
@@ -462,6 +464,7 @@ a.expand {
 
 .icon-zoom-portfolio .icon {
     padding-top: 7px;
+    cursor:  pointer;
 }
 
 .text-modal {
